@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    position: absolute;
+    background-color: antiquewhite;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 25px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0;
+    font-weight: bold;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    background-color: grey;
+    width: 90vw;
+}
+.container{
+    display: flex;
+
+}
+.infoContainer{
+    background-color: cadetblue;
+    height: 65vh;
+    width: 80vw;
+    margin: 95px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+}
+.hello{
+    font-size: 3em;
+    
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.about{
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+.more{
+    font-size: 2em;
+    margin-top: 23px;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.btn button{
+    margin: 3px 5px;
+    padding: 10px 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 25px;
+    border-width: 0;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0px;
+}
+.btn button:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+button .btn .btn-sm{
+    font-size: 5px;
+}
+.devImg img{
+    width: 380px;
+    height: 65vh;
+
+
+}
+.contactForm{
+    padding: 0 35px;
+    
+    font-family: 'Source Code Pro', monospace;
+    margin:0px 150px;
+}
+
+.contactForm h1{
+    font-family: 'Work Sans', sans-serif;
+    /* padding: 12px 0; */
+}
+.contactForm form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm form div input{
+    /* width: 25vw; */
+    border-radius: 5px;
+    margin: 5px 0 0 0;
+    padding: 5px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check {
+    flex-direction: row;
+}
+#form-check input{
+    width:25px;
+    margin: 3px 0;
+}
+.blogItem {
+    margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+.blogContainer{
+    margin: 0 85px;
+}
+h1{
+    font-family: 'Work Sans', sans-serif;
+    margin: 20px;
+
+}
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+.intro{
+    margin: 85px;
+}
+.intro h2{
+    font-family: 'Work Sans', sans-serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+.skillContainer{
+    padding: 12px;
+}
+.skillItem{
+    display: flexbox;
+    align-items: center;
+}
+.skill{
+    width: 265px;
+    height: 7px;
+    background-color: red;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+.cross{
+    margin-left: 110px;
+}
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+@media (max-width: 1000px){
+    .devImg{
+        display: none;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 5px;
+    }
+    .intro, .blogContainer, .contactForm{
+        margin: 50px 10px;
+    }
+}
+/* @media (max-width: 1615px) {
+    *{
+        background-color:rgb(219, 109, 109);
+
+    }
+    .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+} */
